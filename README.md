@@ -5,6 +5,8 @@ Make-n-Paint
 
 Make-n-Paint is a concept for a web service for families that would allow kids to customize toys, print them on a 3D printer and paint them using sharpies or acrylics.
 
+[online demo](http://marciot.com/make-n-paint)
+
 ## What is left to do?
 
 Pretty much everything. This prototype is mockup of what the final web app might look like. Making
