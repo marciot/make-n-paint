@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Texture Painter</title>
+		<style>
+			body {
+				/* Make the body take up entire window minus a margin
+				   http://stackoverflow.com/questions/485827/css-100-height-with-padding-margin
+				 */
+				position:   absolute;
+				top:        0;
+				left:       0;
+				right:      0;
+				bottom:     0;
+				margin:     3em;
+			}
+			
+			/* Themes */
+			
+			body {
+				font-family: Tahoma,Verdana,Segoe,sans-serif;
+			}
+			
+			body.greenTheme .darkThemeColor {
+				background-color: rgb(155,196,30);
+			}
+			
+			body.greenTheme .lightThemeColor {
+				background-color: beige;
+			}
+			
+			body.grayTheme .darkThemeColor {
+				background-color: darkGray;
+			}
+			
+			body.grayTheme .lightThemeColor {
+				background-color: lightGray;
+			}
+			
+			#renderCanvas {
+				width:      100%;
+				height:     100%;
+			}
+			
+			.textureCanvas {
+				position:   absolute;
+				right:      5px;
+				top:        5px;
+				margin:     10px;
+				width:      256px;
+				height:     256px;
+				box-shadow: 5px 5px 10px #888888;
+				border:     white solid 2px;
+				display:    none;
+			}
+			
+			.popupBox, .dialogBox, #about, #patterns, #colors, #sharingMenu {
+				box-shadow:     5px 5px 10px #888888;
+				border:         white solid 2px;
+				display:        none;
+			}
+			
+			.dialogBox {
+				font-size:      90%;
+			}
+			
+			.dialogBox button {
+				border:         white solid 1px;
+				float:          right;
+				margin:         5px;
+				font-size:      100%;
+			}
+			
+			.dialogBox h1 {
+				margin-top:     0px;
+				font-size:      large;
+			}
+			
+			#about {
+				position:       absolute;
+				right:          5px;
+				bottom:         5px;
+				left:           5px;
+				margin:         10px;
+				padding:        20px;
+				padding-left:   60px;
+				padding-bottom: 40px;
+				display:        none;
+				overflow:       auto;
+			}
+			
+			#about a:visited, #about a:link {
+				color: #eeeeee;
+			}
+			
+			#about h1 {
+				font-size:  large;
+			}
+			
+			.topLeft {
+				position:   absolute;
+				top:        10px;
+				left:       10px;
+			}
+			
+			.bottomLeft {
+				position:   absolute;
+				bottom:     10px;
+				left:       10px;
+			}
+			
+			.middleLeft {
+				position:   absolute;
+				top:        50%;
+				left:       10px;
+			}
+			
+			.bottomRight {
+				position:   absolute;
+				bottom:     10px;
+				right:      10px;
+			}
+			
+			.topRight {
+				position:   absolute;
+				top:        10px;
+				right:      10px;
+			}
+			
+			.icons div {
+				width:   32px;
+				height:  32px;
+				margin:  16px;
+			}
+			
+			.icons div:hover {
+				transform: scale(1.25);
+			}
+			
+			.icons div.selected path {
+				fill: red;
+			}
+			
+			.icons svg, .icons img {
+				width: 32px;
+				height: 32px;
+			}
+			
+			#patterns div {
+				background-repeat: repeat;
+				width:             64px;
+				height:            32px;
+				margin:            5px;
+			}
+			
+			#sharingMenu {
+				padding-bottom: 40px;
+			}
+			
+			#colors {
+				padding: 5px;
+			}
+			
+			#colors div {
+				margin:            5px;
+				width:             16px;
+				height:            16px;
+				border-radius:     8px;
+			}
+			
+			#colors div:hover {
+				transform: scale(1.25);
+			}
+			
+			.centered, .dialogBox {
+				position:          absolute;
+				top:               50%;
+				left:              50%;
+				padding:           15px;
+				-ms-transform:     translateX(-50%) translateY(-50%);
+				-webkit-transform: translate(-50%,-50%);
+				transform:         translate(-50%,-50%);
+			}
+		</style>
+		<style>
+			body {
+				background-color: #fff;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="lib/ui/fb-share/fb-share.css">
+	</head>
+	<body class="grayTheme">
+
+		<div class="icons topLeft" id="tools">
+			<div id="pencil" class="selected"><img class="svg" src="images/freepix-svg/pencil.svg"></div>
+			<div id="roller"><img class="svg" src="images/freepix-svg/paint-roller.svg"></div>
+			<div id="eraser"><img class="svg" src="images/freepix-svg/eraser.svg"></div>
+			<div id="colorize"><img class="svg" src="images/freepix-svg/paint-palette-and-brush.svg"></div>
+			<div id="eraser"><img class="svg" src="images/freepix-svg/desk-lamp.svg"></div>
+		</div>
+		<canvas id="depthCanvas" class="textureCanvas darkThemeColor" width=512 height=512></canvas>
+		<canvas id="colorCanvas" class="textureCanvas darkThemeColor" width=512 height=512></canvas>
+		<canvas id="blendCanvas" class="textureCanvas darkThemeColor" width=512 height=512></canvas>
+
+		<div class="icons topRight">
+			<div id="toggleTexture"><img class="svg" src="images/freepix-svg/artboard.svg"></div>
+		</div>
+
+		<div class="middleLeft darkThemeColor" id="patterns">
+		</div>
+		<div class="middleLeft darkThemeColor" id="colors">
+		</div>
+		
+		<div id="sharingMenu" class="icons bottomRight darkThemeColor">
+			<!--<div id="photo">   <img class="svg" src="images/freepix-svg/photo-camera.svg"></div>-->
+			<div id="facebook"><img class="svg" src="images/freepix-svg/facebook-logo.svg"></div>
+			<!--<div id="twitter"> <img class="svg" src="images/freepix-svg/twitter-social-network-logo.svg"></div>-->
+		</div>
+		<div class="icons bottomRight">
+			<div id="sharing"><img class="svg" src="images/freepix-svg/share.svg"></div>
+			<!--<div><img class="svg" src="images/freepix-svg/idea.svg"></div>-->
+		</div>
+		
+		<canvas id="renderCanvas" class="lightThemeColor"></canvas>
+   
+		<div id="about" class="darkThemeColor">
+			<h1>Make-n-Paint</h1>
+			(c) 2016 Marcio Teixeira. All rights reserved.
+			<p>
+			Visit my web page <a href="http://marciot.freeshell.org" target="_blank">here</a>.
+			</p>
+			<hr>
+			
+			<h1>Credits &amp; Acknowlegements:</h1>
+			
+			<div>Icons by <a href="http://www.freepik.com" title="Freepik" target="_blank">Freepik</a> from <a href="http://www.flaticon.com/ajax/pack/112018" title="Flaticon" target="_blank">www.flaticon.com (112018)</a> and <a href="http://www.flaticon.com/packs/admin-ui">www.flaticon.com (admin-ui)</a> are licensed <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+			
+			This application contains code from JQuery (<a href="https://raw.githubusercontent.com/jquery/jquery/master/LICENSE.txt" target="_blank">MIT License</a>), THREE.js (<a href="https://raw.githubusercontent.com/mrdoob/three.js/master/LICENSE" target="_blank">MIT License</a>) and <a href="https://github.com/hongru/canvas2image" target="_blank">canvas2image</a> (MIT License).
+		</div>
+		<div class="icons bottomLeft">
+			<div id="toggleAbout"><img class="svg" src="images/freepix-svg/artist-barrett.svg"></div>
+		</div>
+		
+		<script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/three/three.min.js"></script>
+		<script src="lib/three/OrbitControls.js"></script>
+		
+		<script src="lib/jslicer/worker/GeometrySerialize.js"></script>
+
+		<script src="js/texture-painter.js"></script>
+		
+		<!--- Facebook API --->
+		<script src="lib/ui/fb-share/fb-share.js"></script>
+		<script>
+			var fbAppID   = '508195599367692';
+			var fbShareUI = new FacebookShareUI(fbAppID);
+			fbShareUI.appendToDom();
+			fbShareUI.attachToButton("#facebook");
+			fbShareUI.setSourceCanvas("#renderCanvas", render);
+		</script>
+		<!--- End of Facebook API --->
+	</body>
+</html>

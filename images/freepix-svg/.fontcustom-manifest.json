@@ -1,0 +1,248 @@
+{
+  "checksum": {
+    "previous": "67ba24f549ed80bfef4fd671e48f3f4c0cce9c79c5ee276749f8054db2c48e9c",
+    "current": "67ba24f549ed80bfef4fd671e48f3f4c0cce9c79c5ee276749f8054db2c48e9c"
+  },
+  "fonts": [
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/Flaticon.ttf",
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/Flaticon.svg",
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/Flaticon.woff",
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/Flaticon.eot"
+  ],
+  "glyphs": {
+    "artboard": {
+      "codepoint": 61696,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/artboard.svg"
+    },
+    "artist-barrett": {
+      "codepoint": 61697,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/artist-barrett.svg"
+    },
+    "calculator": {
+      "codepoint": 61698,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/calculator.svg"
+    },
+    "chalk": {
+      "codepoint": 61699,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/chalk.svg"
+    },
+    "circle-ruler": {
+      "codepoint": 61700,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/circle-ruler.svg"
+    },
+    "compass": {
+      "codepoint": 61701,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/compass.svg"
+    },
+    "computer-mouse": {
+      "codepoint": 61702,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/computer-mouse.svg"
+    },
+    "computer-screen": {
+      "codepoint": 61703,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/computer-screen.svg"
+    },
+    "crayola": {
+      "codepoint": 61704,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/crayola.svg"
+    },
+    "cutter-knife": {
+      "codepoint": 61705,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/cutter-knife.svg"
+    },
+    "desk-lamp": {
+      "codepoint": 61706,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/desk-lamp.svg"
+    },
+    "eraser": {
+      "codepoint": 61707,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/eraser.svg"
+    },
+    "eyedropper": {
+      "codepoint": 61708,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/eyedropper.svg"
+    },
+    "eyedropper-1": {
+      "codepoint": 61709,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/eyedropper-1.svg"
+    },
+    "feather": {
+      "codepoint": 61710,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/feather.svg"
+    },
+    "feather-and-ink": {
+      "codepoint": 61711,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/feather-and-ink.svg"
+    },
+    "glue": {
+      "codepoint": 61712,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/glue.svg"
+    },
+    "graphic-design": {
+      "codepoint": 61713,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/graphic-design.svg"
+    },
+    "graphic-design-tool": {
+      "codepoint": 61714,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/graphic-design-tool.svg"
+    },
+    "idea": {
+      "codepoint": 61715,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/idea.svg"
+    },
+    "ink": {
+      "codepoint": 61716,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/ink.svg"
+    },
+    "marker": {
+      "codepoint": 61717,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/marker.svg"
+    },
+    "paint-brush": {
+      "codepoint": 61718,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-brush.svg"
+    },
+    "paint-brush-1": {
+      "codepoint": 61719,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-brush-1.svg"
+    },
+    "paint-brush-2": {
+      "codepoint": 61720,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-brush-2.svg"
+    },
+    "paint-can": {
+      "codepoint": 61721,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-can.svg"
+    },
+    "paint-palette": {
+      "codepoint": 61722,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-palette.svg"
+    },
+    "paint-palette-and-brush": {
+      "codepoint": 61723,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-palette-and-brush.svg"
+    },
+    "paint-roller": {
+      "codepoint": 61724,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-roller.svg"
+    },
+    "paint-tube": {
+      "codepoint": 61725,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paint-tube.svg"
+    },
+    "paper": {
+      "codepoint": 61726,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paper.svg"
+    },
+    "paper-and-feather": {
+      "codepoint": 61727,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paper-and-feather.svg"
+    },
+    "paper-and-pencil": {
+      "codepoint": 61728,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paper-and-pencil.svg"
+    },
+    "paper-clip": {
+      "codepoint": 61729,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paper-clip.svg"
+    },
+    "paper-with-text": {
+      "codepoint": 61730,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/paper-with-text.svg"
+    },
+    "papers": {
+      "codepoint": 61731,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/papers.svg"
+    },
+    "pen": {
+      "codepoint": 61732,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/pen.svg"
+    },
+    "pen-1": {
+      "codepoint": 61733,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/pen-1.svg"
+    },
+    "pen-tool": {
+      "codepoint": 61734,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/pen-tool.svg"
+    },
+    "pencil": {
+      "codepoint": 61735,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/pencil.svg"
+    },
+    "pencil-1": {
+      "codepoint": 61736,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/pencil-1.svg"
+    },
+    "photo-camera": {
+      "codepoint": 61737,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/photo-camera.svg"
+    },
+    "right-triangle": {
+      "codepoint": 61738,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/right-triangle.svg"
+    },
+    "ruler": {
+      "codepoint": 61739,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/ruler.svg"
+    },
+    "scissors": {
+      "codepoint": 61740,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/scissors.svg"
+    },
+    "sharpener": {
+      "codepoint": 61741,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/sharpener.svg"
+    },
+    "sketchbook": {
+      "codepoint": 61742,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/sketchbook.svg"
+    },
+    "spray-paint": {
+      "codepoint": 61743,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/spray-paint.svg"
+    },
+    "transform-box": {
+      "codepoint": 61744,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/transform-box.svg"
+    },
+    "watercolor-palette": {
+      "codepoint": 61745,
+      "source": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg/watercolor-palette.svg"
+    }
+  },
+  "options": {
+    "autowidth": false,
+    "config": false,
+    "css_selector": ".flaticon-{{glyph}}",
+    "debug": false,
+    "font_ascent": 448,
+    "font_descent": 64,
+    "font_design_size": 16,
+    "font_em": 512,
+    "font_name": "Flaticon",
+    "force": true,
+    "input": {
+      "templates": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg",
+      "vectors": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/svg"
+    },
+    "no_hash": true,
+    "output": {
+      "css": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font",
+      "fonts": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font",
+      "preview": "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font"
+    },
+    "preprocessor_path": null,
+    "quiet": true,
+    "templates": [
+      "../../../../../sites/flaticon/libraries/webfont/templates/flaticon.html",
+      "../../../../../sites/flaticon/libraries/webfont/templates/_flaticon.scss",
+      "../../../../../sites/flaticon/libraries/webfont/templates/flaticon.css"
+    ]
+  },
+  "templates": [
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/flaticon.html",
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/_flaticon.scss",
+    "/var/www/static/flaticon/zip_packs/112018-desing-and-paiting-tools-linear/font/flaticon.css"
+  ]
+}
